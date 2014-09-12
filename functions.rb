@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Return a reversed copy of the array
 def reverse(an_array)
   # write your code here
@@ -35,3 +36,6 @@ end
 # puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
 # puts fizzbuzz.join("\n")
 
+=======
+# functions.rb
+>>>>>>> ad264ac91ee497a0802aac86ead1f5f531bcc4ff
