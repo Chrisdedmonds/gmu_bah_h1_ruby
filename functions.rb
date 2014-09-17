@@ -1,14 +1,13 @@
-
 # Return a reversed copy of the array
 def reverse(an_array)
-  # write your code here
+  [an_array].reverse
 end
 
 # Return a map of letters and counts of letters
 # Letters should be lowercase before counting
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
-  # write your code here
+  # write code here
 end
 
 # Sum all the numbers in the array
