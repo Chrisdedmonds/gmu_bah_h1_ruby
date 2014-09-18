@@ -1,13 +1,17 @@
 # Return a reversed copy of the array
 def reverse(an_array)
-  [an_array].reverse
+  ['an_array'].reverse
 end
 
 # Return a map of letters and counts of letters
 # Letters should be lowercase before counting
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
-  # write code here
+  "a_string".downcase
+  h = Hash.new(0)
+  a_string.each_char do |char|
+  	next unless char =~/\w/
+  	h[char] += 1
 end
 
 # Sum all the numbers in the array
@@ -15,7 +19,7 @@ end
 # Be sure to only sum the numbers
 # (Hint: the is_a? method might be useful here)
 def sum_only_numbers(an_array)
-  # write your code here
+  
 end
 
 # For i from 1 to 100, return an array.
