@@ -1,17 +1,18 @@
 # Return a reversed copy of the array
 def reverse(an_array)
-  ['an_array'].reverse
+  an_array.reverse
 end
 
 # Return a map of letters and counts of letters
 # Letters should be lowercase before counting
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
-  "a_string".downcase
-  h = Hash.new(0)
-  a_string.each_char do |char|
-  	next unless char =~/\w/
-  	h[char] += 1
+  a_string.downcase!
+  char = a_string.split(//)
+  frequencies = Hash.new(0)
+  char.each {|char| frequencies[char] += 1}
+  frequencies = frequencies.sort_by {|a, b| b }
+  frequencies.each {|word, frequency| puts word + " " + frequency.to_s}
 end
 
 # Sum all the numbers in the array
@@ -34,11 +35,8 @@ def fizzbuzz
 end
 
 # Uncomment each of these to test your functions
-# puts reverse([3,6,'dog']).inspect
-# puts histogram('The Quick brown fox').inspect
+  puts reverse([3,6,'dog']).inspect
+  puts histogram('The Quick brown fox').inspect
 # puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
 # puts fizzbuzz.join("\n")
 
-=======
-# functions.rb
->>>>>>> ad264ac91ee497a0802aac86ead1f5f531bcc4ff
