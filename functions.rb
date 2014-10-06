@@ -12,7 +12,7 @@ def histogram(a_string)
   frequencies = Hash.new(0)
   char.each {|char| frequencies[char] += 1}
   frequencies = frequencies.sort_by {|a, b| b }
-  frequencies.each {|word, frequency| puts word + " " + frequency.to_s}
+#  frequencies.each {|word, frequency| puts word + " " + frequency.to_s}
 end
 
 # Sum all the numbers in the array
