@@ -20,7 +20,10 @@ end
 # Be sure to only sum the numbers
 # (Hint: the is_a? method might be useful here)
 def sum_only_numbers(an_array)
-  
+  a = an_array.grep(Integer)
+  b = an_array.grep(Float)
+  array_sum = a + b
+  array_sum.inject(:+)
 end
 
 # For i from 1 to 100, return an array.
@@ -37,6 +40,5 @@ end
 # Uncomment each of these to test your functions
   puts reverse([3,6,'dog']).inspect
   puts histogram('The Quick brown fox').inspect
-# puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
-# puts fizzbuzz.join("\n")
-
+  puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
+#  puts fizzbuzz.join("\n")
