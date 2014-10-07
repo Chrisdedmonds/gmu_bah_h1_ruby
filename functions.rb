@@ -37,34 +37,18 @@ def fizzbuzz
   i = "\n"
   return [i]
   if i % 3 == 0 && i % 5 == 0 
-    puts 'FizzBuzz'
+    return 'FizzBuzz'
   elsif i % 5 == 0
-    puts 'Buzz'
+    return 'Buzz'
   elsif i % 3 == 0
-    puts 'Fizz'
+    return 'Fizz'
   else  
-    puts i
+    return i
   end
 end
-
-def fizzbuzz(test_array)
-  test_array.each { |i|
-  if i % 3 == 0 && i % 5 == 0 
-    puts 'FizzBuzz'
-  elsif i % 5 == 0
-    puts 'Buzz'
-  elsif i % 3 == 0
-    puts 'Fizz'
-  else  
-    puts i
-  end
-  }
-end
-
-puts fizzbuzz[1, 2, 3, 4, 5]
 
 # Uncomment each of these to test your functions
-#  puts reverse([3,6,'dog']).inspect
-#  puts histogram('The Quick brown fox').inspect
-#  puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
+  puts reverse([3,6,'dog']).inspect
+  puts histogram('The Quick brown fox').inspect
+  puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
   puts fizzbuzz.join("\n")
