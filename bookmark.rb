@@ -14,4 +14,3 @@ class Bookmark
     last_visited = Time.now  
   end
 end
-
