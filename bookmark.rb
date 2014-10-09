@@ -10,7 +10,7 @@ class Bookmark
     @title = title
   end
   
-  def visit!
+  def visit!(last_visited)
     last_visited = Time.now  
   end
 end
